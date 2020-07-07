@@ -40,4 +40,9 @@ public class UserProfileController {
 		
 		this.service.uploadUserProfileImage(id, file);
 	}
+	
+	@GetMapping("/{userId}/image/download")
+	public byte[] downloadUserProfileImage(@PathVariable("userId") UUID id){
+		return this.service.downloadUserProfileImage(id);
+	}
 }
