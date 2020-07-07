@@ -2,7 +2,7 @@ package com.java.awsimage.bucket;
 
 public enum BucketName {
 
-	PROFILE_IMAGE("aws-image-hub");
+	PROFILE_IMAGE("your-aws-bucket-name");
 	
 	private final String bucketName;
 
